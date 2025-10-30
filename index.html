@@ -168,8 +168,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #8b0000;
+            padding: 0 10px;
+            text-align: center;
         }
         
         .book-content {
@@ -234,9 +236,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #8b0000;
             margin-right: 2rem;
+            padding: 0 10px;
+            text-align: center;
         }
         
         .detail-title {
@@ -333,6 +337,10 @@
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
+            
+            .book-image, .detail-image {
+                font-size: 2rem;
+            }
         }
         
         @media (max-width: 480px) {
@@ -350,6 +358,10 @@
             
             .nav-item {
                 text-align: center;
+            }
+            
+            .book-image, .detail-image {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -390,7 +402,7 @@
                 
                 <div class="books-grid">
                     <div class="book-card" data-book="zhouyi">
-                        <div class="book-image">《易》</div>
+                        <div class="book-image">《周易》</div>
                         <div class="book-content">
                             <h3 class="book-title">周易</h3>
                             <p class="book-author">作者：相传为周文王</p>
@@ -400,7 +412,7 @@
                     </div>
                     
                     <div class="book-card" data-book="shijing">
-                        <div class="book-image">《诗》</div>
+                        <div class="book-image">《诗经》</div>
                         <div class="book-content">
                             <h3 class="book-title">诗经</h3>
                             <p class="book-author">作者：多人合集</p>
@@ -410,7 +422,7 @@
                     </div>
                     
                     <div class="book-card" data-book="lunyu">
-                        <div class="book-image">《论》</div>
+                        <div class="book-image">《论语》</div>
                         <div class="book-content">
                             <h3 class="book-title">论语</h3>
                             <p class="book-author">作者：孔子弟子及再传弟子</p>
@@ -429,7 +441,7 @@
                 
                 <div class="books-grid">
                     <div class="book-card" data-book="shiji">
-                        <div class="book-image">《史》</div>
+                        <div class="book-image">《史记》</div>
                         <div class="book-content">
                             <h3 class="book-title">史记</h3>
                             <p class="book-author">作者：司马迁</p>
@@ -439,7 +451,7 @@
                     </div>
                     
                     <div class="book-card" data-book="hanshu">
-                        <div class="book-image">《汉》</div>
+                        <div class="book-image">《汉书》</div>
                         <div class="book-content">
                             <h3 class="book-title">汉书</h3>
                             <p class="book-author">作者：班固</p>
@@ -449,7 +461,7 @@
                     </div>
                     
                     <div class="book-card" data-book="zizhitongjian">
-                        <div class="book-image">《资》</div>
+                        <div class="book-image">《资治通鉴》</div>
                         <div class="book-content">
                             <h3 class="book-title">资治通鉴</h3>
                             <p class="book-author">作者：司马光</p>
@@ -468,7 +480,7 @@
                 
                 <div class="books-grid">
                     <div class="book-card" data-book="daodejing">
-                        <div class="book-image">《道》</div>
+                        <div class="book-image">《道德经》</div>
                         <div class="book-content">
                             <h3 class="book-title">道德经</h3>
                             <p class="book-author">作者：老子</p>
@@ -478,7 +490,7 @@
                     </div>
                     
                     <div class="book-card" data-book="zhuangzi">
-                        <div class="book-image">《庄》</div>
+                        <div class="book-image">《庄子》</div>
                         <div class="book-content">
                             <h3 class="book-title">庄子</h3>
                             <p class="book-author">作者：庄周</p>
@@ -488,7 +500,7 @@
                     </div>
                     
                     <div class="book-card" data-book="mozi">
-                        <div class="book-image">《墨》</div>
+                        <div class="book-image">《墨子》</div>
                         <div class="book-content">
                             <h3 class="book-title">墨子</h3>
                             <p class="book-author">作者：墨翟及其弟子</p>
@@ -507,7 +519,7 @@
                 
                 <div class="books-grid">
                     <div class="book-card" data-book="chuci">
-                        <div class="book-image">《楚》</div>
+                        <div class="book-image">《楚辞》</div>
                         <div class="book-content">
                             <h3 class="book-title">楚辞</h3>
                             <p class="book-author">作者：屈原等</p>
@@ -517,7 +529,7 @@
                     </div>
                     
                     <div class="book-card" data-book="wenxuan">
-                        <div class="book-image">《文》</div>
+                        <div class="book-image">《文选》</div>
                         <div class="book-content">
                             <h3 class="book-title">文选</h3>
                             <p class="book-author">编者：萧统</p>
@@ -527,7 +539,7 @@
                     </div>
                     
                     <div class="book-card" data-book="quantangshi">
-                        <div class="book-image">《全》</div>
+                        <div class="book-image">《全唐诗》</div>
                         <div class="book-content">
                             <h3 class="book-title">全唐诗</h3>
                             <p class="book-author">编者：多人</p>
@@ -572,7 +584,7 @@
             'zhouyi': {
                 title: '周易',
                 author: '相传为周文王',
-                symbol: '《易》',
+                symbol: '《周易》',
                 description: '《周易》是中国最古老的占卜文献，后逐渐演变为哲学著作，被誉为"群经之首，大道之源"。',
                 content: `
                     <div class="detail-section">
@@ -596,7 +608,7 @@
             'shijing': {
                 title: '诗经',
                 author: '多人合集',
-                symbol: '《诗》',
+                symbol: '《诗经》',
                 description: '中国第一部诗歌总集，收录了从西周初年到春秋中叶的诗歌305篇，分为风、雅、颂三部分。',
                 content: `
                     <div class="detail-section">
@@ -616,7 +628,7 @@
             'lunyu': {
                 title: '论语',
                 author: '孔子弟子及再传弟子',
-                symbol: '《论》',
+                symbol: '《论语》',
                 description: '记录孔子及其弟子言行的语录体著作，是研究孔子思想的主要资料，儒家经典之一。',
                 content: `
                     <div class="detail-section">
@@ -636,7 +648,7 @@
             'shiji': {
                 title: '史记',
                 author: '司马迁',
-                symbol: '《史》',
+                symbol: '《史记》',
                 description: '中国第一部纪传体通史，记载了从黄帝到汉武帝时期的历史。',
                 content: `
                     <div class="detail-section">
@@ -656,7 +668,7 @@
             'hanshu': {
                 title: '汉书',
                 author: '班固',
-                symbol: '《汉》',
+                symbol: '《汉书》',
                 description: '中国第一部纪传体断代史，记载了西汉一朝的历史。',
                 content: `
                     <div class="detail-section">
@@ -672,7 +684,7 @@
             'zizhitongjian': {
                 title: '资治通鉴',
                 author: '司马光',
-                symbol: '《资》',
+                symbol: '《资治通鉴》',
                 description: '中国第一部编年体通史，记载了从战国到五代的历史。',
                 content: `
                     <div class="detail-section">
@@ -688,7 +700,7 @@
             'daodejing': {
                 title: '道德经',
                 author: '老子',
-                symbol: '《道》',
+                symbol: '《道德经》',
                 description: '道家哲学思想的重要来源，以"道"解释宇宙万物的演变。',
                 content: `
                     <div class="detail-section">
@@ -704,7 +716,7 @@
             'zhuangzi': {
                 title: '庄子',
                 author: '庄周',
-                symbol: '《庄》',
+                symbol: '《庄子》',
                 description: '道家经典之一，文章想象奇幻，构思巧妙，具有浪漫主义艺术风格。',
                 content: `
                     <div class="detail-section">
@@ -720,7 +732,7 @@
             'mozi': {
                 title: '墨子',
                 author: '墨翟及其弟子',
-                symbol: '《墨》',
+                symbol: '《墨子》',
                 description: '墨家学派的著作总汇，主张"兼爱"、"非攻"等思想。',
                 content: `
                     <div class="detail-section">
@@ -736,7 +748,7 @@
             'chuci': {
                 title: '楚辞',
                 author: '屈原等',
-                symbol: '《楚》',
+                symbol: '《楚辞》',
                 description: '中国文学史上第一部浪漫主义诗歌总集。',
                 content: `
                     <div class="detail-section">
@@ -752,7 +764,7 @@
             'wenxuan': {
                 title: '文选',
                 author: '编者：萧统',
-                symbol: '《文》',
+                symbol: '《文选》',
                 description: '中国现存最早的一部诗文总集。',
                 content: `
                     <div class="detail-section">
@@ -768,7 +780,7 @@
             'quantangshi': {
                 title: '全唐诗',
                 author: '编者：多人',
-                symbol: '《全》',
+                symbol: '《全唐诗》',
                 description: '清朝初年编修的汇集唐代诗歌的总集。',
                 content: `
                     <div class="detail-section">
